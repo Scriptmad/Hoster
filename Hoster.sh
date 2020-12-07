@@ -5,14 +5,7 @@ y=ToolKits
 f=found
 w=wget
 p=php
-if ! command -v figlet &> /dev/nul; then
-
-pkg install figlet
-clear
-sleep 2
-echo 'Downloaded'
-
-else
+if [[ -f figlet ]]; then
 
 echo "Welcome to $Skid"
 sleep 4
@@ -21,23 +14,27 @@ echo "          Join telegram channel:@Scriptmad ,Follow on Instagram @Sakidasoe
 sleep 3
 ##Join telegram Scriptmad Copy with credit.
 ###----------Sakidaso-----------###
-
+else
+pkg install figlet
+clear
+sleep 2
+echo 'Downloaded'
 fi
 clear
 echo 'Checking Requirement.'
-if ! command -v wget &> /dev/nul; then
-echo "Not $f $w [x]"
-else
+if [[ -f wget ]]; then
 echo "$w $f [✓]"
+else
+echo "Not $f $w [x]"
 pkg install wget -y
 fi
-if ! command -v php &> /dev/nul; then
+if [[ -f php ]]; then
+echo "$p $f [✓]"
+else
 echo "not $f $p [x]"
 sleep 1
 echo 'Wait for installation...'
 pkg install php
-else
-echo "$p $f [✓]"
 fi
 if [[ -f ngrok ]]; then
 echo "Ngrok $f [✓]"
