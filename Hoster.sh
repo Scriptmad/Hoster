@@ -1,13 +1,11 @@
 #!/bin/bash
 
-#New
-
 Skid=Sakidaso
 y=ToolKits
 f=found
 w=wget
 p=php
-if ! command -v figlet &> /dev/nul then
+if ! command -v figlet &> /dev/nul; then
 
 pkg install figlet
 clear
