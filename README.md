@@ -17,7 +17,11 @@ Create your own domain for free on your portable device(s).
 * `git clone https://github.com/Scriptmad/Hoster`
 * `cd Hoster`
 * `bash Hoster.sh`
-* `bash ngserver.sh`
+* `bash NgServer.sh`
+
+## Screenshots :
+
+
 
 ## CONNECT WITH US :
 [![Messenger](https://img.shields.io/badge/Chat-Messenger-blue?style=for-the-badge&logo=messenger)](https://rebrand.ly/scriptmadofficial)
