@@ -16,8 +16,7 @@ Create your own domain for free on your portable device(s).
 * `pkg install git`
 * `git clone https://github.com/Scriptmad/Hoster`
 * `cd Hoster`
-* `bash Hoster.sh`
-* `bash NgServer.sh`
+* `bash installer.sh`
 
 ## Screenshots :
 
