@@ -40,14 +40,14 @@ if [[ -f ngrok ]]; then
 echo "Ngrok $f [✓]"
 else
 echo "Ngrok not $f [x]"
-wget "https://drive.google.com/u/6/uc?id=1kMu63h07OXXbfPuQhI6m47gF0vr9MIzc&export=download" -O ngrok
+wget "https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip" -O ngrok
 fi
 echo 'php Server Starting'
 echo 'Open New Tab Then run NgServer.sh'
 #if you have any problem ping me on insta or telegram.
 mkdir -p scriptmad-index
-mv index.html /scriptmad-index/
-php -S 127.0.0.1:8080 -t /scriptmad-index/
+mv index.html scriptmad-index/
+php -S 127.0.0.1:8080 -t scriptmad-index/
 figlet -f small "Thanks for use our tool"
 figlet -f big "SakidasoToolKits"
 echo "read more on Manuals"
